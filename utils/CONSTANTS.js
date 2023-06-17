@@ -45,16 +45,16 @@ export const socialNetworks = [
     {
         id: "footer-rs-instagram",
         link: "https://instagram.com",
-        icon: <InstagramIcon fill="fill-violetBlue" width="20" height="20"/>
+        icon: <InstagramIcon width="20" height="20"/>
     },
     {
         id: "footer-rs-facebook",
         link: "https://facebook.com",
-        icon: <FacebookIcon fill="fill-violetBlue" width="20" height="20"/>
+        icon: <FacebookIcon width="20" height="20"/>
     },
     {
         id: "footer-rs-twitter",
         link: "https://twitter.com",
-        icon: <TwitterIcon fill="fill-violetBlue" width="20" height="20"/>
+        icon: <TwitterIcon width="20" height="20"/>
     }
 ]
