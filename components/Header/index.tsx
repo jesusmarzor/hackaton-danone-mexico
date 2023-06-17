@@ -13,7 +13,7 @@ export const Header = () => {
                 isLoginShow && loginLink != undefined &&
                 <Login name={loginLink?.name ?? ""} route={loginLink.route ?? ""}/>
             }
-            <div className="flex justify-between items-center my-8 mx-10">
+            <div className="flex justify-between items-center py-8 px-10">
                 <Image
                 src="/logos/image3.png"
                 width={150}

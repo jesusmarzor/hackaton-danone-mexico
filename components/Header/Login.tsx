@@ -15,7 +15,6 @@ export const Login: React.FC<props> = ({name, route}) => {
                 <UserIcon
                     width="15"
                     height="15"
-                    fill="white"
                 />
                 {name}
             </Link>

@@ -1,3 +1,4 @@
+import { Button } from 'components/ui/Button'
 import Image from 'next/image'
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
       <section className="flex flex-col justify-center items-center gap-5 p-10">
         <h1 className="text-2xl font-bold">Keep track of your daily calorie limit!</h1>
         <p className="">Tell us your maximum daily calorie intake and we will recommend the products that best suit your goals!</p>
-        <button>Start now</button>
+        <Button color='text-violetBlue' borderColor='border-violetBlue' width='w-40' height='h-12'>Start now</Button>
       </section>
     </main>
   )
