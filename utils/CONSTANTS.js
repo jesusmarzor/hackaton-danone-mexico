@@ -1,10 +1,20 @@
-export const navLinks = [
+export const appLinks = [
     {
-        name: "home",
+        id: "nav-link-home",
+        position: "header",
+        name: "Home",
         route: "/"
     },
     {
-        name: "products",
+        id: "nav-link-products",
+        position: "header",
+        name: "Products",
         route: "/products"
+    },
+    {
+        id: "nav-link-login",
+        position: "top-header",
+        name: "Login/Sign Up",
+        route: "/login"
     }
 ]

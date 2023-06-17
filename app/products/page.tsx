@@ -1,5 +1,5 @@
 export default function Product() {
   return (
-    <h1>Test</h1>
+    <h1>Products - In progress...</h1>
   )
 }

@@ -24,12 +24,12 @@ module.exports = {
         "main800": "#061ccd",
         "main900": "#10249f",
         "main950": "#0a135c",
-        "light-blue": "#e8f3ff",
-        "picton-blue": "#4CABE4",
-        "blue-jeans": "#5BB5E9",
-        "baby-blue": "#89C8F2",
-        "vivid-blue": "#11ACED",
-        "violet-blue": "#324BAA"
+        "lightBlue": "#e8f3ff",
+        "pictonBlue": "#4CABE4",
+        "blueJeans": "#5BB5E9",
+        "babyBlue": "#89C8F2",
+        "vividBlue": "#11ACED",
+        "violetBlue": "#324BAA"
       }
     },
     fontSize: {
