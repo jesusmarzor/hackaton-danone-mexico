@@ -13,14 +13,14 @@ export const Header = () => {
                 isLoginShow && loginLink != undefined &&
                 <Login name={loginLink?.name ?? ""} route={loginLink.route ?? ""}/>
             }
-            <div className="flex justify-between items-center h-20 my-5 mx-10">
+            <div className="flex justify-between items-center my-8 mx-10">
                 <Image
-                src="/logos/image2.png"
-                width={300}
-                height={300}
+                src="/logos/image3.png"
+                width={150}
+                height={100}
                 priority={true}
                 alt="Danone header logo"
-                style={{objectFit:"contain"}}
+                style={{objectFit:"cover"}}
                 />
                 <NavLink/>
             </div>
