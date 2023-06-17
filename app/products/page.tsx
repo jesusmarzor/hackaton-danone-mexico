@@ -1,5 +1,10 @@
+import { ProductList } from "components/Products/ProductList";
+
 export default function Product() {
   return (
-    <h1>Products - In progress...</h1>
+    <main>
+      <ProductList products={[]}/>
+    </main>
   )
 }
+

@@ -10,6 +10,12 @@ export const appLinks = [
         route: "/"
     },
     {
+        id: "nav-link-products",
+        position: "header",
+        name: "Products",
+        route: "/products"
+    },
+    {
         id: "nav-link-login",
         position: "top-header",
         name: "Login/Sign Up",

@@ -1,5 +1,5 @@
 const featuresConfig = {
-    showLoginSection: true
+    showLoginSection: false
 }
 
 export default featuresConfig
