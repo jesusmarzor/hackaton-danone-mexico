@@ -1,0 +1,27 @@
+{
+    "common": {
+        "home": "Home",
+        "products": "Products",
+        "news": "News",
+        "contact": "Contact",
+        "help": "Help",
+        "search": "Search",
+        "description": "Description",
+        "preparation": "Preparation"
+    },
+    "header": {
+        "login": {
+            "button": "Login/Sign Up"
+        }
+    },
+    "home": {
+        "first_section": {
+            "title": "Keep track of your daily calorie limit!",
+            "paragraph": "Tell us your maximum daily calorie intake and we will recommend the products that best suit your goals!",
+            "button": "Start now"
+        }
+    },
+    "products": {
+        "not_found": "'@' not found"
+    }
+}

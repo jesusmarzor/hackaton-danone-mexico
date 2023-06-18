@@ -1,4 +1,6 @@
+"use client"
 import Image from "next/image"
+import { useTranslation } from "react-i18next"
 import ContentfulApi from "utils/ContentfulApi"
 
 interface Params {
@@ -10,6 +12,7 @@ interface props {
 }
 
 const ProductDetail: React.FunctionComponent<props> = async ({params})  => {
+    const { t } = useTranslation()
     const {slug, image, name, description, steps}: Product = await getProduct(params.id)
     return (
         <section>
@@ -24,12 +27,12 @@ const ProductDetail: React.FunctionComponent<props> = async ({params})  => {
                 style={{objectFit:"cover"}}
                 />
                 <section className="flex flex-col pl-5">
-                    <h2 className="font-semibold text-xl">Description</h2>
+                    <h2 className="font-semibold text-xl">{t("common.description")}</h2>
                     <p className="">{description}</p>
                 </section>
             </div>
             <section className="flex flex-col px-14 py-5">
-                <h2 className="font-semibold text-xl">Preparación</h2>
+                <h2 className="font-semibold text-xl">{t("common.preparation")}</h2>
                 <ol>
                 {
                     steps.map( step => <li key={slug + step} className="list-decimal">{step}</li>)
