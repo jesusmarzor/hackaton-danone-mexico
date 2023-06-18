@@ -14,7 +14,7 @@ const ProductDetail: React.FunctionComponent<props> = async ({params})  => {
     return (
         <section>
             <h1 className="font-bold text-2xl text-center p-8">{name}</h1>
-            <div className="flex p-10">
+            <div className="flex justify-center items-center p-10 flex-wrap lg:flex-nowrap gap-2">
                 <Image
                 src={image.url}
                 width={500}

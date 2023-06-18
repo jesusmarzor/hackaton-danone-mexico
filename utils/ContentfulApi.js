@@ -43,7 +43,6 @@ export default class ContentfulApi {
     }
 
     static async getProduct(id) {
-      console.log(id)
       const query = `{
         productCollection {
           items {
@@ -61,7 +60,6 @@ export default class ContentfulApi {
         }
       }`;
       const response = await this.callContentful(query);
-      console.log(response.data.productCollection.items)
       return response.data.productCollection.items.find(({slug}) => slug === id)
     }
   }
