@@ -15,7 +15,7 @@ export const Header = () => {
             <div className="flex flex-col max-w-7xl mx-auto">
                 {
                     isLoginShow && loginLink != undefined &&
-                    <Login name={loginLink?.name ?? ""} route={loginLink.route ?? ""}/>
+                    <Login nameKey={loginLink?.nameKey ?? ""} route={loginLink.route ?? ""}/>
                 }
                 <div className="flex justify-between items-center py-8 px-10">
                     <Image

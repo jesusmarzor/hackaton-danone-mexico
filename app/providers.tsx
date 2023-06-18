@@ -1,5 +1,6 @@
 'use client';
 import { ModulesControllerProvider } from "contexts/ModulesControllerContext";
+import "config/i18n"
 
 interface props {
     children: JSX.Element

@@ -2,19 +2,21 @@
 import { Product } from "components/Products/Product"
 import { Input } from "components/ui/Input"
 import { useInput } from "hooks/useInput"
+import { useTranslation } from "react-i18next"
 
 interface props {
     products: Product[]
 }
 
 export const  ProductList: React.FunctionComponent<props> = ({products}) => {
+    const { t } = useTranslation()
     const {text, changeText, productsFiltered} = useInput(products)
     return(
         <>
-            <Input title="Search" changeText={changeText}/>
+            <Input title={t("common.search")} changeText={changeText}/>
             {
                  productsFiltered.length === 0 ?
-                 <p className="p-8 text-center">{`"${text}" not found`}</p> :
+                 <p className="p-8 text-center">{t("products.not_found").replace("@", text)}</p> :
                  <ul className="grid grid-cols-repeat18 gap-2 p-8">
                  {
                      productsFiltered.map( ({slug, image, name}) => {
