@@ -1,9 +1,16 @@
 import { ProductList } from "components/Products/ProductList";
+import ContentfulApi from "utils/ContentfulApi";
 
-const Product = () => {
+const Product = async () => {
+  const products = await getProducts()
   return (
-    <ProductList/>
+    <ProductList products={products}/>
   )
 }
 
 export default Product
+
+const getProducts = () => {
+  const products = ContentfulApi.getProducts()
+  return products
+}
