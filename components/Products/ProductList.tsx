@@ -1,16 +1,15 @@
 import { Product } from "components/Products/Product"
+import ContentfulApi from "utils/ContentfulApi"
 
-interface props {
-    products: Product[]
-}
-export const ProductList: React.FunctionComponent<props> = ({products}) => {
+export const  ProductList = async () => {
+    const products: Product[] = await getProducts()
     return(
-        <ul>
+        <ul className="flex justify-center items-center gap-5 p-8">
             {
-                products.map( ({slug, image, name, num, description, cal}) => {
+                products.map( ({id, image, name, num, description, cal}) => {
                     return(
-                        <li>
-                            <Product slug={slug} image={image} name={name} num={num} description={description} cal={cal}/>
+                        <li key={id}>
+                            <Product id={id} image={image} name={name} num={num} description={description} cal={cal}/>
                         </li>
                     )
                 }
@@ -19,3 +18,8 @@ export const ProductList: React.FunctionComponent<props> = ({products}) => {
         </ul>
     )
 }
+
+const getProducts = () => {
+    const products = ContentfulApi.getProducts()
+    return (products)
+  }

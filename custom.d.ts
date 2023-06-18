@@ -3,7 +3,13 @@ interface IconProps {
     fill?: string
 }
 
+interface Image {
+    title: string
+    url: string
+}
+
 interface Product {
-    slug, image, name, description: string
+    id, name, description: string
     num, cal: number
+    image: Image
 }

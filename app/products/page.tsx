@@ -1,10 +1,11 @@
 import { ProductList } from "components/Products/ProductList";
 
-export default function Product() {
+const Product = () => {
   return (
     <main>
-      <ProductList products={[]}/>
+      <ProductList/>
     </main>
   )
 }
 
+export default Product
