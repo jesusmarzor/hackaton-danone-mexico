@@ -11,7 +11,7 @@ export const  ProductList: React.FunctionComponent<props> = ({products}) => {
     const {text, changeText, productsFiltered} = useInput(products)
     return(
         <>
-            <Input title="Search" changeText={changeText} width="w-96"/>
+            <Input title="Search" changeText={changeText}/>
             {
                  productsFiltered.length === 0 ?
                  <p className="p-8 text-center">{`"${text}" not found`}</p> :

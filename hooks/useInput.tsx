@@ -13,7 +13,6 @@ export const useInput = (products: Product[]) => {
     }, [text])
 
     const changeText = (e: React.ChangeEvent<HTMLInputElement>) => {
-        console.log(e.target.value)
         let clearText = (e.target.value).trim()
         !isEmpty(clearText) ? setText(e.target.value) : setText("")
     }

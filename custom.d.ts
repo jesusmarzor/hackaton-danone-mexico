@@ -1,6 +1,5 @@
 interface IconProps {
-    width, height: string
-    fill?: string
+    width, height, fill?, classesName?: string
 }
 
 interface Image {

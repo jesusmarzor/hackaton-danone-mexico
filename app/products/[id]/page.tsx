@@ -32,7 +32,7 @@ const ProductDetail: React.FunctionComponent<props> = async ({params})  => {
                 <h2 className="font-semibold text-xl">Preparación</h2>
                 <ol>
                 {
-                    steps.map( step => <li key={slug} className="list-decimal">{step}</li>)
+                    steps.map( step => <li key={slug + step} className="list-decimal">{step}</li>)
                 }
                 </ol>
             </section>
