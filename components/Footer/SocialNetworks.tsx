@@ -1,4 +1,3 @@
-import InstagramIcon from "components/ui/icons/InstagramIcon"
 import Link from "next/link"
 import { socialNetworks } from "utils/CONSTANTS"
 

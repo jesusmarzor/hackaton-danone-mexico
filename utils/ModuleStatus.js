@@ -1,6 +1,6 @@
 const ModuleStatus = {
-    ENABLED: "enabled",
-    DISABLED: "disabled"
+  ENABLED: 'enabled',
+  DISABLED: 'disabled'
 }
 
 export default ModuleStatus

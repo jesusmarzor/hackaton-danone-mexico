@@ -1,7 +1,10 @@
+"use client"
 import { Button } from 'components/ui/Button'
 import Image from 'next/image'
+import { useTranslation } from 'react-i18next'
 
 export default function Home() {
+  const { t } = useTranslation()
   return (
     <>
       <div className="h-120 w-full overflow-hidden">
@@ -15,9 +18,9 @@ export default function Home() {
         />
       </div>
       <section className="flex flex-col justify-center items-center gap-5 p-10">
-        <h1 className="text-2xl font-bold">Keep track of your daily calorie limit!</h1>
-        <p className="">Tell us your maximum daily calorie intake and we will recommend the products that best suit your goals!</p>
-        <Button color='text-violetBlue' borderColor='border-violetBlue' width='w-40' height='h-12'>Start now</Button>
+        <h1 className="text-2xl font-bold">{t("home.first_section.title")}</h1>
+        <p>{t("home.first_section.paragraph")}</p>
+        <Button color='text-violetBlue' borderColor='border-violetBlue' width='w-40' height='h-12'>{t("home.first_section.button")}</Button>
       </section>
     </>
   )
