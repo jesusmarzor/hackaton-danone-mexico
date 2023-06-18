@@ -4,12 +4,12 @@ import ContentfulApi from "utils/ContentfulApi"
 export const  ProductList = async () => {
     const products: Product[] = await getProducts()
     return(
-        <ul className="flex justify-center items-center gap-5 p-8">
+        <ul className="grid grid-cols-repeat18 gap-2 p-8">
             {
-                products.map( ({slug, image, name, num, description, cal}) => {
+                products.map( ({slug, image, name}) => {
                     return(
-                        <li key={slug}>
-                            <Product slug={slug} image={image} name={name} num={num} description={description} cal={cal}/>
+                        <li className="mx-auto" key={slug}>
+                            <Product slug={slug} image={image} name={name}/>
                         </li>
                     )
                 }

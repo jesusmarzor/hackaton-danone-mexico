@@ -33,6 +33,9 @@ module.exports = {
         "babyBlue": "#89C8F2",
         "vividBlue": "#11ACED",
         "violetBlue": "#324BAA"
+      },
+      gridTemplateColumns: {
+        'repeat18': 'repeat(auto-fill, minmax(18rem, 1fr))'
       }
     },
     fontSize: {

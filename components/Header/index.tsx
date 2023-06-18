@@ -8,21 +8,23 @@ export const Header = () => {
     const isLoginShow = (featuresConfig.showLoginSection)
     const loginLink = appLinks.find( ({id}) => id === "nav-link-login")
     return(
-        <header className="flex flex-col">
-            {
-                isLoginShow && loginLink != undefined &&
-                <Login name={loginLink?.name ?? ""} route={loginLink.route ?? ""}/>
-            }
-            <div className="flex justify-between items-center py-8 px-10">
-                <Image
-                src="/logos/image3.png"
-                width={150}
-                height={100}
-                priority={true}
-                alt="Danone header logo"
-                style={{objectFit:"cover"}}
-                />
-                <NavLink/>
+        <header>
+            <div className="flex flex-col max-w-7xl mx-auto">
+                {
+                    isLoginShow && loginLink != undefined &&
+                    <Login name={loginLink?.name ?? ""} route={loginLink.route ?? ""}/>
+                }
+                <div className="flex justify-between items-center py-8 px-10">
+                    <Image
+                    src="/logos/image3.png"
+                    width={150}
+                    height={100}
+                    priority={true}
+                    alt="Danone header logo"
+                    style={{objectFit:"cover"}}
+                    />
+                    <NavLink/>
+                </div>
             </div>
         </header>
     )

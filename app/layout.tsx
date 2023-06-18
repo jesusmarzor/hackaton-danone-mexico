@@ -20,7 +20,9 @@ export default function RootLayout({
       <body className={`${inter.className} text-violetBlue text-md`}>
         <main className="min-h-screen flex flex-col">
           <Header/>
-            {children}
+            <div className="max-w-7xl mx-auto w-screen">
+              {children}
+            </div>
           <Footer/>
         </main>
       </body>

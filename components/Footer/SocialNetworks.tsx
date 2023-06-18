@@ -5,7 +5,7 @@ import { socialNetworks } from "utils/CONSTANTS"
 export const SocialNetworks = () => {
     return(
         <nav>
-            <ul className="flex justify-center items-center gap-6 text-xs">
+            <ul className="flex justify-center items-center flex-wrap gap-6 text-xs">
                 {
                     socialNetworks.map( ({id, link, icon}) => {
                         return (
