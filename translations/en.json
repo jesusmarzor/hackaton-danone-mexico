@@ -20,5 +20,8 @@
             "paragraph": "Tell us your maximum daily calorie intake and we will recommend the products that best suit your goals!",
             "button": "Start now"
         }
+    },
+    "products": {
+        "not_found": "'@' not found"
     }
 }
