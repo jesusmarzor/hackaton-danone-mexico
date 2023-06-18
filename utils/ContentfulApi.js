@@ -1,11 +1,10 @@
 export default class ContentfulApi {
     static async callContentful(query) {
-      const fetchUrl = `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`;
-  
+      const fetchUrl = `https://graphql.contentful.com/content/v1/spaces/${process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID}`;
       const fetchOptions = {
         method: "POST",
         headers: {
-          Authorization: `Bearer ${process.env.CONTENTFUL_ACCESS_TOKEN}`,
+          Authorization: `Bearer ${process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN}`,
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ query }),
@@ -61,5 +60,17 @@ export default class ContentfulApi {
       }`;
       const response = await this.callContentful(query);
       return response.data.productCollection.items.find(({slug}) => slug === id)
+    }
+
+    static async getModulesController() {
+      const query = `{
+        modulesConfigCollection {
+          items {
+            config
+          }
+        }
+      }`;
+      const response = await this.callContentful(query);
+      return response.data.modulesConfigCollection.items[0].config
     }
   }

@@ -14,3 +14,7 @@ interface Product {
     image: Image
     steps: string[]
 }
+
+interface ModuleConfig {
+    status: string
+}

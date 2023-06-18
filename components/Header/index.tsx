@@ -1,11 +1,14 @@
+"use client"
 import Image from "next/image"
 import { appLinks } from "utils/CONSTANTS"
-import featuresConfig from "utils/featuresConfig"
 import { Login } from "components/Header/Login"
 import { NavLink } from "components/Header/NavLink"
+import { ModulesControllerConsumer } from "contexts/ModulesControllerContext"
+import ModuleStatus from "utils/ModuleStatus"
 
 export const Header = () => {
-    const isLoginShow = (featuresConfig.showLoginSection)
+    const moduleController = ModulesControllerConsumer()
+    const isLoginShow = moduleController?.login?.status === ModuleStatus.ENABLED
     const loginLink = appLinks.find( ({id}) => id === "nav-link-login")
     return(
         <header>
