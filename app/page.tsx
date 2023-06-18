@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main>
+    <>
       <div className="h-120 w-full overflow-hidden">
         <Image
         src="/img/heroHome.jpeg"
@@ -19,6 +19,6 @@ export default function Home() {
         <p className="">Tell us your maximum daily calorie intake and we will recommend the products that best suit your goals!</p>
         <Button color='text-violetBlue' borderColor='border-violetBlue' width='w-40' height='h-12'>Start now</Button>
       </section>
-    </main>
+    </>
   )
 }

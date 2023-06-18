@@ -12,4 +12,5 @@ interface Product {
     slug, name, description: string
     num, cal: number
     image: Image
+    steps: string[]
 }

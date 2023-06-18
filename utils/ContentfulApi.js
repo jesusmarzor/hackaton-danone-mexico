@@ -34,6 +34,7 @@ export default class ContentfulApi {
             description
             num
             cal
+            steps
           } 
         }
       }`;
@@ -55,6 +56,7 @@ export default class ContentfulApi {
             description
             num
             cal
+            steps
           } 
         }
       }`;
