@@ -7,11 +7,11 @@
 - Usa Headless CMS como administrador de contenido. [Recomendación: Contentful].
 - Cree la API de GraphQL para conectarse con Headless CMS.
 - Crear la documentación del proyecto.
-- Implemente en aplicaciones como Vercel.
+- Despliegue la web en aplicaciones como Vercel.
 
 ## Primeros pasos :rocket:
 Para ayudar al desarrollo de esta aplicación o probarla, se tiene que cumplir estos pasos:
-- Clonar el repositorio en tu máquina local.
+- Clonar el repositorio en la máquina local.
     ```
     git clone https://github.com/jesusmarzor/hackaton-danone-mexico.git
     ```
@@ -20,7 +20,7 @@ Para ayudar al desarrollo de esta aplicación o probarla, se tiene que cumplir e
     npm install
     ```
 
-- Iniciar el servidor de desarrollo en tu máquina local.
+- Iniciar el servidor de desarrollo en la máquina local.
     ```
     npm run dev
     ```
@@ -58,7 +58,7 @@ Se ha pensado más en el "road map técnico" que en el "pixel perfect" ya que no
     En un futuro cuando se termine el desarrollo, si queremos mostrar el acceso al login desde la cabecera solo habría que mandar desde el back ese módulo habilitado y se habilitará en el frontal como se ve en la captura anterior.
 
 ## Detalles Personales 📋
-Está hackaton me ha servido para apender los cambios que ha dado Nextjs en su versión 13 (me ha costado adaptarme :dizzy_face:) y sobretodo para aprender GraphQL y Contentful.
+Esta hackaton me ha servido para apender los cambios que ha dado Nextjs en su versión 13 (me ha costado adaptarme :dizzy_face:) y sobretodo para aprender GraphQL y Contentful.
 
 Es una pena que haya durado tan poco y no pueda terminar todas las páginas de la web como me gustaría.
 
