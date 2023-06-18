@@ -7,11 +7,11 @@ export default function Home() {
       <div className="h-120 w-full overflow-hidden">
         <Image
         src="/img/heroHome.jpeg"
-        width={300}
-        height={300}
+        width={1000}
+        height={1000}
         priority={true}
         alt="Hero home image"
-        style={{width:"100vw", objectFit:"cover"}}
+        className="w-screen object-cover"
         />
       </div>
       <section className="flex flex-col justify-center items-center gap-5 p-10">
