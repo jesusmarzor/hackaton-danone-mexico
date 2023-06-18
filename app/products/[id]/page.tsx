@@ -10,7 +10,7 @@ interface props {
 }
 
 const ProductDetail: React.FunctionComponent<props> = async ({params})  => {
-    const {slug, image, name, num, description, cal, steps}: Product = await getProduct(params.id)
+    const {slug, image, name, description, steps}: Product = await getProduct(params.id)
     return (
         <section>
             <h1 className="font-bold text-2xl text-center p-8">{name}</h1>
@@ -32,7 +32,7 @@ const ProductDetail: React.FunctionComponent<props> = async ({params})  => {
                 <h2 className="font-semibold text-xl">Preparación</h2>
                 <ol>
                 {
-                    steps.map( step => <li className="list-decimal">{step}</li>)
+                    steps.map( step => <li key={slug} className="list-decimal">{step}</li>)
                 }
                 </ol>
             </section>
