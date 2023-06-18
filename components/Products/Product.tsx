@@ -1,9 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
 
-export const Product: React.FunctionComponent<Product> = ({id, image, name}) => {
+export const Product: React.FunctionComponent<Product> = ({slug, image, name}) => {
     return(
-        <Link href={`products/${id}`} className="flex flex-col justify-end items-center relative w-72 h-96 overflow-hidden bg-black bg-opacity-40 hover:bg-opacity-25">
+        <Link href={`products/${slug}`} className="flex flex-col justify-end items-center relative w-72 h-96 overflow-hidden bg-black bg-opacity-40 hover:bg-opacity-25">
             <Image
             className="absolute min-h-full object-cover -z-10"
             src={image.url}

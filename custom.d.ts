@@ -9,7 +9,7 @@ interface Image {
 }
 
 interface Product {
-    id, name, description: string
+    slug, name, description: string
     num, cal: number
     image: Image
 }

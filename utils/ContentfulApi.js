@@ -29,7 +29,7 @@ export default class ContentfulApi {
               title
               url
             }
-            id  
+            slug  
             name
             description
             num
@@ -39,5 +39,27 @@ export default class ContentfulApi {
       }`;
       const response = await this.callContentful(query);
       return response.data.productCollection.items
+    }
+
+    static async getProduct(id) {
+      console.log(id)
+      const query = `{
+        productCollection {
+          items {
+            image {
+              title
+              url
+            }
+            slug  
+            name
+            description
+            num
+            cal
+          } 
+        }
+      }`;
+      const response = await this.callContentful(query);
+      console.log(response.data.productCollection.items)
+      return response.data.productCollection.items.find(({slug}) => slug === id)
     }
   }
