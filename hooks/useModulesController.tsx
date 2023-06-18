@@ -6,9 +6,6 @@ export const useModulesController = () => {
     const [modulesController, setModulesController] = useState(null)
     useEffect( () => {
         getModulesController().then( mc => {
-            console.log("-----------")
-            console.log(mc)
-            console.log("-----------")
             setModulesController(mc)
         })
     }, [])
