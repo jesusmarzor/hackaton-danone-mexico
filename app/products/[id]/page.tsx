@@ -28,7 +28,7 @@ const ProductDetail: React.FunctionComponent<props> = async ({params})  => {
                     <p className="">{description}</p>
                 </section>
             </div>
-            <section className="flex flex-col px-10 py-5">
+            <section className="flex flex-col px-14 py-5">
                 <h2 className="font-semibold text-xl">Preparación</h2>
                 <ol>
                 {
